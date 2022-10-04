@@ -1,0 +1,43 @@
+@media (min-width: 480px) {
+    .envoltura-acerca {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 768px) {    
+    .infoPers {
+        grid-area: infoPers;
+    }
+
+    .objPers {
+        grid-area: objPers;
+    }
+
+    .infoPersP {
+        grid-area: infoPersP;
+    }
+
+    .objPersP {
+        grid-area: objPersP;
+    }
+
+    .texto-acerca p {
+        margin-top: 7px;
+    }
+
+    .texto-acerca {
+        display: grid;
+        column-gap: 25px;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas: 
+        "infoPers objPers"
+        "infoPersP objPersP"
+        ;
+    }
+}
+
+@media (min-width: 1024px) {
+    .texto-acerca {
+        grid-template-columns: 1fr 1fr;
+    }
+}

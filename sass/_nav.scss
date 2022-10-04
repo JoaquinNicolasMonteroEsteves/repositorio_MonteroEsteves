@@ -1,0 +1,36 @@
+header {
+    font-size: large;
+    justify-content: center;
+    background-color: #B8C7F2;
+    height: 60px;
+    nav {
+        background-color: #B8C7F2;
+    }
+        li {
+        padding: 5px;
+        
+        ul {
+            list-style-type: none;
+        }        
+    }
+    
+}
+
+@media (min-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 110px;
+    }
+
+    .navbar a {
+        font-size: 27px;
+    }
+
+    ul {
+        display: flex;
+        justify-self: center;
+    }
+}
+
