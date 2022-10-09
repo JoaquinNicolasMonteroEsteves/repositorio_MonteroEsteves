@@ -1,26 +1,27 @@
-header {
-    font-size: large;
-    justify-content: center;
-    height: 60px;
-    nav {
-        background-color: #B8C7F2;
-        li {
-            padding: 5px;
-            ul {
-                list-style-type: none;
-            }
-        }        
+nav {
+    background-color: $hfn;
+    li {
+        padding: 5px;
+        ul {
+            list-style-type: none;
+        }
+    }        
+}
+
+
+@media (min-width: 768px) {    
+    .aNav {
+        padding: 4px;
+        border: solid 2px black;
+    }
+
+    .aNav:hover {
+        background-color: rgba(0, 0, 0, 0.095);
+        color: white;
     }
 }
 
 @media (min-width: 992px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 110px;
-    }
-
     .navbar a {
         font-size: 27px;
     }
@@ -31,3 +32,8 @@ header {
     }
 }
 
+@media (min-width: 1024px) {
+    .aNav:hover {
+        transition-duration: 0.5s;
+    }
+}

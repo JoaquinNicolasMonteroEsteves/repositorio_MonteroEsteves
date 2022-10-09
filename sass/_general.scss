@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(161, 161, 161);
+    background-color: $body;
 }
 
 a {
@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     font-size: 23px;
-    color: rgb(223, 223, 223);
+    color: $h2;
     text-decoration: overline;
     padding-top: 25px;
     padding-bottom: 7px;
@@ -37,9 +37,16 @@ h3 {
     padding-bottom: 5px;
 }
 
+header {
+    font-size: large;
+    justify-content: center;
+    height: 60px;
+    background-color: $hfn;
+}
+
 footer {
     padding: 3px;
-    background-color: #B8C7F2;
+    background-color: $hfn;
     margin-top: 1.5em;
     height: 190px;
 
@@ -167,16 +174,6 @@ footer {
 }
 
 @media (min-width: 768px) {    
-    .aNav {
-        padding: 4px;
-        border: solid 2px black;
-    }
-
-    .aNav:hover {
-        background-color: rgba(0, 0, 0, 0.095);
-        color: white;
-    }
-
     .footerContacto {
         display: grid;
         grid-template-areas: 
@@ -235,6 +232,15 @@ footer {
     }
 }
 
+@media (min-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 110px;
+    }
+}
+
 @media (min-width: 1024px) {
     .footerp p {
         text-decoration: underline;
@@ -269,13 +275,8 @@ footer {
         transition-duration: 2s;
     }
 
-    .aNav:hover {
-        transition-duration: 0.5s;
-    }
-
     h1 {
         font-size: 45px;
-        
     }
 
     footer {
