@@ -1,5 +1,22 @@
+.accordion-item, .accordion-button {
+    background-color: $envoltura;
+    font-size: 16px;
+    color: white;
+}
+
 @media (min-width: 480px) {
     .envoltura {
         margin: 5px;
     }
+    .accordion-item, .accordion-button {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .accordion-item, .accordion-button {
+        font-size: 25px;
+    }
+
 }

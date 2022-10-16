@@ -38,6 +38,13 @@ h3 {
   padding-bottom: 5px;
 }
 
+header {
+  font-size: large;
+  justify-content: center;
+  height: 60px;
+  background-color: #B8C7F2;
+}
+
 footer {
   padding: 3px;
   background-color: #B8C7F2;
@@ -104,6 +111,11 @@ footer {
   font-weight: bold;
 }
 
+.linkedinp {
+  display: flex;
+  text-align: center;
+}
+
 .linkedini, .maili, .telefonoi {
   display: flex;
   justify-content: right;
@@ -151,16 +163,13 @@ footer {
   .footerp p {
     text-decoration: underline;
   }
+  .icono {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+  }
 }
 @media (min-width: 768px) {
-  .aNav {
-    padding: 4px;
-    border: solid 2px black;
-  }
-  .aNav:hover {
-    background-color: rgba(0, 0, 0, 0.095);
-    color: white;
-  }
   .footerContacto {
     display: grid;
     grid-template-areas: "linkedini linkedinp maili mailp" ". telefonoi telefonop .";
@@ -203,6 +212,14 @@ footer {
     transition-duration: 1s;
   }
 }
+@media (min-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+  }
+}
 @media (min-width: 1024px) {
   .footerp p {
     text-decoration: underline;
@@ -229,9 +246,6 @@ footer {
     transform: scale(1.1);
     transition-duration: 2s;
   }
-  .aNav:hover {
-    transition-duration: 0.5s;
-  }
   h1 {
     font-size: 45px;
   }
@@ -242,35 +256,38 @@ footer {
     margin: 10px;
   }
 }
-header {
-  font-size: large;
-  justify-content: center;
-  background-color: #B8C7F2;
-  height: 60px;
-}
-header nav {
+nav {
   background-color: #B8C7F2;
 }
-header li {
+nav li {
   padding: 5px;
 }
-header li ul {
+nav li ul {
   list-style-type: none;
 }
 
-@media (min-width: 992px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 110px;
+@media (min-width: 768px) {
+  .aNav {
+    padding: 4px;
+    border: solid 2px black;
   }
+  .aNav:hover {
+    background-color: rgba(0, 0, 0, 0.095);
+    color: white;
+  }
+}
+@media (min-width: 992px) {
   .navbar a {
     font-size: 27px;
   }
   ul {
     display: flex;
     justify-self: center;
+  }
+}
+@media (min-width: 1024px) {
+  .aNav:hover {
+    transition-duration: 0.5s;
   }
 }
 @media (min-width: 480px) {
@@ -322,8 +339,22 @@ header li ul {
     grid-template-columns: 1fr 1fr;
   }
 }
+.accordion-item, .accordion-button {
+  background-color: #46524d;
+  font-size: 16px;
+  color: white;
+}
+
 @media (min-width: 480px) {
   .envoltura {
     margin: 5px;
+  }
+  .accordion-item, .accordion-button {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .accordion-item, .accordion-button {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=styles.css.map */
